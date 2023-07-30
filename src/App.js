@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import BotCollection from './components/BotCollection';
 
-function App() {
+const App = () => {
+  const [bots, setBots] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:8001/bots')
+      .then(response => response.json())
+      .then(data => setBots(data))
+      .catch(error => console.error(error));
+  }, []);
+
+  const enlistBot = (bot) => {
+    // Implement the enlistBot functionality here
+    // For example, add the bot to the army state
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Bot Battlr</h1>
+      {/* Pass the bots and enlistBot function as props */}
+      <BotCollection bots={bots} enlistBot={enlistBot} />
     </div>
   );
-}
+};
 
 export default App;
