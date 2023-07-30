@@ -3,6 +3,7 @@ import BotCollection from './components/BotCollection';
 
 const App = () => {
   const [bots, setBots] = useState([]);
+  const [army, setArmy] = useState([]);
 
   useEffect(() => {
     fetch('http://localhost:8001/bots')
@@ -12,8 +13,9 @@ const App = () => {
   }, []);
 
   const enlistBot = (bot) => {
-    // Implement the enlistBot functionality here
-    // For example, add the bot to the army state
+    if (!army.find(existingBot => existingBot.id === bot.id)) {
+      setArmy([...army, bot]);
+    }
   };
 
   return (
@@ -21,6 +23,7 @@ const App = () => {
       <h1>Bot Battlr</h1>
       {/* Pass the bots and enlistBot function as props */}
       <BotCollection bots={bots} enlistBot={enlistBot} />
+      {/* You can also render the YourBotArmy component here if needed */}
     </div>
   );
 };
