@@ -10,7 +10,10 @@ Follow these steps to set up the project:
    ```bash
    npm install
 
-2. Run this command to get the backend started: `json-server --watch db.json`
+2. Run this command to get the backend started: 
+
+   ```bash
+   json-server --watch db.json
 
 3. Test your server by visiting this route in the browser: `http://localhost:3000/bots`
 
