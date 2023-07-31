@@ -7,7 +7,7 @@ const App = () => {
   const [yourBotArmy, setYourBotArmy] = useState([]);
 
   useEffect(() => {
-    fetch(' http://localhost:3000/bots')
+    fetch('http://localhost:3000/bots')
       .then((response) => response.json())
       .then((data) => setBots(data))
       .catch((error) => console.error('Error fetching bots:', error));
@@ -15,7 +15,15 @@ const App = () => {
 
   const enlistBot = (botId) => {
     const botToEnlist = bots.find((bot) => bot.id === botId);
-    setYourBotArmy((prevArmy) => [...prevArmy, botToEnlist]);
+
+    // Check if the bot is already enlisted
+    const isAlreadyEnlisted = yourBotArmy.some((bot) => bot.id === botId);
+
+    if (!isAlreadyEnlisted) {
+      setYourBotArmy((prevArmy) => [...prevArmy, botToEnlist]);
+    } else {
+      alert('Bot is already enlisted.');
+    }
   };
 
   const releaseBot = (botId) => {
@@ -23,7 +31,7 @@ const App = () => {
   };
 
   const dischargeBot = (botId) => {
-    fetch(` http://localhost:3000/bots/${botId}`, { method: 'DELETE' })
+    fetch(`http://localhost:3000/bots/${botId}`, { method: 'DELETE' })
       .then(() => {
         setYourBotArmy((prevArmy) => prevArmy.filter((bot) => bot.id !== botId));
       })
@@ -33,11 +41,11 @@ const App = () => {
   return (
     <div>
       <h1>Bot Battlr</h1>
-      <h2>Available Bots</h2>
-      <BotCollection bots={bots} enlistBot={enlistBot} />
-
       <h2>Your Bot Army</h2>
       <YourBotArmy bots={yourBotArmy} releaseBot={releaseBot} dischargeBot={dischargeBot} />
+
+      <h2>Available Bots</h2>
+      <BotCollection bots={bots} enlistBot={enlistBot} />
     </div>
   );
 };

@@ -1,4 +1,3 @@
-// Bot.js
 import React from 'react';
 
 const Bot = ({ bot, enlistBot, releaseBot, dischargeBot }) => {
