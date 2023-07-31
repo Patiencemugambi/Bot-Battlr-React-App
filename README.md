@@ -47,5 +47,4 @@ This project is licensed under the [MIT License](LICENSE). See the LICENSE file 
 ## Author
 
 - **Patience Mugambi**
-- GitHub: [patiencemugambi](https://github.com/patiencemugambi)
 - LinkedIn: [Patience Mugambi](https://www.linkedin.com/feed/)
