@@ -6,8 +6,7 @@ Follow these steps to set up the project:
 
 1. Create a new project folder.
 2. Create a new GitHub repository.
-3. Add your TM as a contributor to the project. (This is only for grading purposes. I promise not to steal your code).
-4. Please make sure you regularly commit to the repository.
+3. 
 5. In your project directory, create a `db.json` file and use this dataLinks to an external site. for your server DB.
 6. Run this command to get the backend started: `json-server --watch db.json`
 7. Test your server by visiting this route in the browser: `http://localhost:8001/bots`
