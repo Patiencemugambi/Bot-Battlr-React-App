@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import BotCollection from './components/BotCollection';
 import YourBotArmy from './components/YourBotArmy';
+import './App.css';
 
 const App = () => {
   const [bots, setBots] = useState([]);
@@ -16,7 +17,7 @@ const App = () => {
   const enlistBot = (botId) => {
     const botToEnlist = bots.find((bot) => bot.id === botId);
 
-    // Check if the bot is already enlisted
+    // Check if the bot is already enlisted NB
     const isAlreadyEnlisted = yourBotArmy.some((bot) => bot.id === botId);
 
     if (!isAlreadyEnlisted) {
