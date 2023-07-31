@@ -27,13 +27,12 @@ As a user, you can:
 
 3. **Release Bots**: Release a bot from your army by clicking on it. The bot disappears from the `YourBotArmy` component.
 
-4. **Discharge Bots**: Discharge a bot from their service forever by clicking the red button marked "x," which deletes the bot both from the backend and from the `YourBotArmy` on the frontend.
+4. **Discharge Bots**: Discharge a bot from their service forever by clicking the red button marked "x," which deletes the bot both from the backend and from the `YourBotArmy` on the frontend.   **
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE). See the LICENSE file for details.
 
-## Author
+## Author **Patience Mugambi**
 
-- **Patience Mugambi**
 - LinkedIn: [Patience Mugambi](https://www.linkedin.com/feed/)
