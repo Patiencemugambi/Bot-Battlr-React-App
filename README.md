@@ -3,13 +3,16 @@
 ## Project Setup
 
 Follow these steps to set up the project:
+1. **Install dependencies:**
 
-1. Create a new project folder.
-2. Create a new GitHub repository.
-3. 
-5. In your project directory, create a `db.json` file and use this dataLinks to an external site. for your server DB.
-6. Run this command to get the backend started: `json-server --watch db.json`
-7. Test your server by visiting this route in the browser: `http://localhost:8001/bots`
+   Before starting, ensure you have Node.js and npm installed on your local machine.
+
+   ```bash
+   npm install
+
+2. Run this command to get the backend started: `json-server --watch db.json`
+
+3. Test your server by visiting this route in the browser: `http://localhost:3000/bots`
 
 ## Project Features
 
