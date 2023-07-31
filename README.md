@@ -33,6 +33,8 @@ As a user, you can:
 
 This project is licensed under the [MIT License](LICENSE). See the LICENSE file for details.
 
-## Author **Patience Mugambi**
+## Author
+
+**Patience Mugambi**
 
 - LinkedIn: [Patience Mugambi](https://www.linkedin.com/feed/)
