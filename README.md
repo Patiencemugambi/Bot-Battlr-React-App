@@ -1,7 +1,5 @@
 # Bot Battlr - React Web App
 
-Welcome to **Bot Battlr**, the one and only spot in the known universe where you can custom build your own Bot Army! This is an interactive React web application that allows users to browse a list of available bots, view their details, enlist them into their army, and release them as needed.
-
 ## Project Setup
 
 Follow these steps to set up the project:
@@ -25,20 +23,6 @@ As a user, you can:
 3. **Release Bots**: Release a bot from your army by clicking on it. The bot disappears from the `YourBotArmy` component.
 
 4. **Discharge Bots**: Discharge a bot from their service forever by clicking the red button marked "x," which deletes the bot both from the backend and from the `YourBotArmy` on the frontend.
-
-## Advanced Deliverables
-
-As a user, you should be able to:
-
-- Choose if you want to enlist a bot into your army or just see their data. Clicking on the card should instead display a show view (`BotSpecs`) for that bot, which should replace `BotCollection`. `BotSpecs` should have two buttons: one to go back to the list view and another to enlist that bot.
-
-- Sort bots by their health, damage, or armor. For this, create a new component, `SortBar`.
-
-- When you enlist a bot, it will be **removed** from the `BotCollection` and added to `YourBotArmy`.
-
-- Filter bots by their class. You can select multiple filters at the same time.
-
-- Only enlist **one** bot from each `bot_class`. The classes are `["Support", "Medic", "Assault", "Defender", "Captain", "Witch"]`.
 
 ## License
 
