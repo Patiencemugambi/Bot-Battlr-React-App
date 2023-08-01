@@ -3,19 +3,24 @@
 ## Project Setup
 
 Follow these steps to set up the project:
-1. **Install dependencies:**
 
-   Before starting, ensure you have Node.js and npm installed on your local machine.
-
-   ```bash
-   npm install
+1. Create a new project folder and set up your React application using `npx create-react-app (projectname)`.
 
 2. Run this command to get the backend started: 
 
    ```bash
    json-server --watch db.json
 
-3. Test your server by visiting this route in the browser: `http://localhost:3000/bots`
+3. **Install dependencies:**
+
+   Before starting, ensure you have Node.js and npm installed on your local machine.
+
+   ```bash
+   npm install
+
+
+
+4. Test your server by visiting this route in the browser: `http://localhost:3000/bots`
 
 ## Project Features
 
